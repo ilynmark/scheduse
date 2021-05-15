@@ -1,0 +1,110 @@
+<!-- Schedule Page 3-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(49, 49, 49);
+                }
+            #title{color:rgb(250, 245, 195);
+                font-size: 40px;
+                font-family:"lucida grande", tahoma, verdana, arial, sans-serif
+            }
+            input {
+                padding: .70rem 2.3rem .70rem 1rem;/* отступы от текста до рамки */
+                border: 2px solid #ccc; 
+                border-radius: 15px;/* скругление полей формы */
+                font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+                font-size: 17px
+            }
+            .button:hover { 
+                background-color: rgb(80, 59, 102);
+                color: #fffafa }
+            .form3 {
+                padding:.70rem 2.3rem .70rem 1rem;
+                border: 2px solid #ccc;
+                width: 1150px;
+                border-radius: 15px;
+                background-color: rgb(228, 218, 240);
+                color:rgb(80, 59, 102);
+                font-size: 17px;
+                font-family:"lucida grande", tahoma, verdana, arial, sans-serif}
+            .form4{
+                padding:.70rem 2.3rem .70rem 1rem;
+                border: 2px solid #ccc;
+                width: 200px;
+                border-radius: 15px;
+                background-color: rgb(228, 218, 240);
+                color:rgb(80, 59, 102);
+                font-size: 17px;
+                font-family:"lucida grande", tahoma, verdana, arial, sans-serif}
+            
+            .button {
+                background-color: rgb(214, 195, 236); /* Snow */
+                border-radius: 60px;
+                color: rgb(65, 52, 80);
+                padding: 25px 45px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                border-radius: 60px;
+                margin:auto;
+                display:block;
+                    }
+            #submit {
+                background-color: rgb(237, 218, 240); /* Snow */
+                border-radius: 60px;
+                color: rgb(65, 52, 80);
+                padding: 25px 45px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                border-radius: 60px;
+                margin:auto;
+                display:block;
+            }
+            #submit:hover { 
+                background-color: rgb(80, 59, 102);
+                color: #fffafa }
+            a {text-decoration: none;}
+        </style>            
+    </head>
+    
+    <body>
+        <h1 id='title' align="center">Please indicate your fixed activities</h1>
+
+        <form method='POST'>
+            <table id="myTable">
+                <tr>
+                </tr>
+            </table><br>
+        </form>
+        
+        <button class="button" type="button" onclick="myFunction1()">+</button><br>
+        
+        <script>
+            function myFunction1() {
+                var textinput = '<input class="form3" name="textinput1" type="task name" id="taskname">';
+                var form1 = '<select  class="form4" name="form1"><option value="From">From</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">1:00</option><option value="1:30">1:30</option><option value="2:00">2:00</option><option value="2:30">2:30</option><option value="3:00">3:00</option><option value="3:30">3:30</option><option value="4:00">4:00</option><option value="4:30">4:30</option><option value="5:00">5:00</option><option value="5:30">5:30</option><option value="6:00">6:00</option><option value="6:30">6:30</option><option value="7:00">7:00</option><option value="7:30">7:30</option><option value="8:00">8:00</option><option value="8:30">8:30</option><option value="9:00">9:00</option><option value="9:30">9:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option> <option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option></select>';
+                var form2 = '<select  class="form4" name="form2"><option value="Until">Until</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">1:00</option><option value="1:30">1:30</option><option value="2:00">2:00</option><option value="2:30">2:30</option><option value="3:00">3:00</option><option value="3:30">3:30</option><option value="4:00">4:00</option><option value="4:30">4:30</option><option value="5:00">5:00</option><option value="5:30">5:30</option><option value="6:00">6:00</option><option value="6:30">6:30</option><option value="7:00">7:00</option><option value="7:30">7:30</option><option value="8:00">8:00</option><option value="8:30">8:30</option><option value="9:00">9:00</option><option value="9:30">9:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option> <option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option></select>';
+
+                var table = document.getElementById("myTable");
+                var row = table.insertRow(1);
+
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+  
+                cell1.innerHTML = textinput;
+                cell2.innerHTML = form1;
+                cell3.innerHTML = form2;
+            }
+        </script>
+
+        <a href = "page4.html">
+            <button class="submit" id="submit" type="button" value="Submit">Submit</button>
+        </a>
+    </body>
+</html>
